@@ -28,7 +28,7 @@ The framework is designed not to replace human judgement but to scaffold it — 
 
 | Layer | What it assesses | Who assesses it |
 |---|---|---|
-| **Technical markers** | Metadata, compression patterns, generative artefacts, watermark signals | Tool-assisted (ExifTool, C2PA, SynthID, OpenAI Verify) |
+| **Technical markers** | Metadata, compression patterns, generative artefacts, watermark signals | Tool-assisted |
 | **Aesthetic markers** | Documentary framing conventions, camera behaviour, environmental sound, lighting consistency, visual credibility signals | Human-guided structured assessment |
 | **Narrative markers** | Testimonial structure, emotional urgency, eyewitness conventions, symbolic framing, consistency of account | Human-guided structured assessment |
 
@@ -55,7 +55,7 @@ The Authenticity Lens is being developed across three parallel layers:
 A focused, testable proof-of-concept implementation of the three-layer provenance inventory walkthrough, developed through the Global Trust Challenge Prototyping Phase. Demonstrates that the framework produces more interpretable and actionable authenticity assessments than existing detection tools.
 
 ### Layer 2 — MSCA Research Platform (planned, 2027–2029)
-A fully validated, open-access academic platform developed through a Marie Skłodowska-Curie Postdoctoral Fellowship proposal, with **CYENS Centre of Excellence / Cyprus University of Technology confirmed as the host institution**. Built through rigorous participatory design with educators, journalists, and media literacy practitioners. Free to use, peer-reviewed, and cross-culturally evaluated.
+A fully validated academic platform developed through a Marie Skłodowska-Curie Postdoctoral Fellowship proposal, with **CYENS Centre of Excellence / Cyprus University of Technology confirmed as the host institution**. Built through rigorous participatory design with educators, journalists, and media literacy practitioners. Free to use, peer-reviewed, and cross-culturally evaluated.
 
 ### Layer 3 — Smart Story Labs Commercial Product (post-2029)
 An enterprise-grade, institutionally licensed platform commercialised through Smart Story Labs, with advanced features, API integrations, and full product development behind it.
@@ -75,43 +75,6 @@ An enterprise-grade, institutionally licensed platform commercialised through Sm
 
 ---
 
-## Technologies Integrated
-
-The Authenticity Lens is an integration layer that combines signals from multiple existing tools across the technical markers layer, while adding the aesthetic and narrative markers layers that none of these tools provide:
-
-- [ExifTool](https://exiftool.org/) — metadata extraction and analysis
-- [C2PA](https://c2pa.org/) — content provenance credential verification
-- [SynthID](https://deepmind.google/technologies/synthid/) — Google DeepMind synthetic content detection
-- [OpenAI AI Text Classifier / detection tools](https://openai.com/) — synthetic text detection signals
-- [Google Fact Check Tools API](https://developers.google.com/fact-check/tools/api/reference/rest) — narrative markers cross-referencing
-- [Forensically](https://29a.ch/photo-forensics/) — open-source image forensics
-
----
-
-## Repository Structure
-
-```
-authenticity-lens/
-├── README.md                          # This file
-├── LICENSE                            # CC BY 4.0
-├── CONTRIBUTING.md                    # How to get involved
-├── framework/
-│   ├── technical-markers.md           # Technical layer specification
-│   ├── aesthetic-markers.md           # Aesthetic layer specification
-│   └── narrative-markers.md           # Narrative layer specification
-├── provenance-inventory/
-│   ├── provenance-inventory-template.md   # Structured assessment template
-│   └── sample-assessment.md           # Worked example
-├── research/
-│   ├── bibliography.md                # Full Harvard reference list with DOIs
-│   └── research-context.md            # Connection to existing literature
-└── roadmap/
-    ├── prototype-roadmap.md           # Three-layer development roadmap
-    └── gtc-prototype-spec.md          # GTC prototype specification
-```
-
----
-
 ## Selected Publications
 
 - Krishnan, A.S. et al. (2025–2026). EU AI Act White Paper Series (10 outputs). AI and Partners / Smart Story Labs. SSRN: [5392761](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5392761), [5505418](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5505418), [5618092](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5618092), [5778822](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5778822)
@@ -122,7 +85,7 @@ authenticity-lens/
 ## Institutional Affiliations
 
 - Smart Story Labs, UAE (EU Commission PIC: 871008494 | Transparency Register: REG 467341699814-52)
-- EU Commission Expert Evaluator, Horizon Europe (EX2025D1160962)
+- EU Commission Expert Evaluator, Horizon Europe
 - Scientific Researcher, EURAXESS, European Commission
 - Associate, EIT Culture and Creativity Digital Hub
 - CYENS Centre of Excellence / Cyprus University of Technology (confirmed host for MSCA fellowship application)
@@ -130,16 +93,9 @@ authenticity-lens/
 
 ---
 
-## Get Involved
+## Contact
 
-The Authenticity Lens is actively seeking collaboration in the following areas through the GTC expert community:
-
-- **Frontend and backend development** — building the prototype walkthrough interface
-- **ML and data engineering** — integrating detection tool APIs into the technical markers layer
-- **UX and interaction design** — designing the human-centred assessment workflow
-- **Journalism and media literacy practice** — contributing to pilot testing and evaluation
-
-To get in touch: skamritha@gmail.com | amrithask@smartstorylabs.com
+skamritha@gmail.com | amrithask@smartstorylabs.com
 
 ---
 
